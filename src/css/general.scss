@@ -5,12 +5,29 @@ body{
     font-family: 'Space Mono', monospace;
     letter-spacing: 2px;
     line-height: 24px;
+    background:url("../images/code-editoren-t.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;  
+}
+#wrapper{
+    background-color:#fff;
+    section{
+        border:solid 2px black;
+        background-color:  var(--section-color);
+        margin:3%;
+        padding:5%;
+    }
 }
 header{
     background-color:var(--blue);
-    color:#fff;
-    text-align: center;
     font-family: 'Anton', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    a{
+        color:#fff;
+        text-decoration: none;
+    }
 }
 nav, footer{
     background-color:var(--green);
