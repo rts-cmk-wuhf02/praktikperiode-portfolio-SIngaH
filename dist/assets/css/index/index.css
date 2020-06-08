@@ -1,4 +1,5 @@
-@import url("../css/variables.css");
-@import url("../css/general.css");
-@import url("../css/flex.css");
-@import url("../css/nav-footer.css");
+@import url("../variables.css");
+@import url("../general.css");
+@import url("../index/about-me.css");
+@import url("../index/about-my-education.css");
+@import url("../nav-footer.css");

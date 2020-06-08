@@ -1,0 +1,36 @@
+#about-my-education{
+    display: grid;
+    grid-template-columns:70% 30%;
+    grid-template-rows: 10% 30% 30% 30%;
+    h2{
+        grid-row:1;
+        grid-column:1/span 2;
+        a{
+            color:#fff;
+            text-decoration: underline 2px;
+        }
+    }
+    .much, .moderate, .little{
+        grid-column:1;
+        ul{
+            display:flex;
+            justify-content: space-between;
+            flex-direction: column;
+            li{
+                list-style: none;
+            }
+        }
+    }
+    .much-explainer, .moderate-explainer, .little-explainer{
+        grid-column:2;
+    }
+    .much-explainer{
+        grid-row:2;
+    }
+    .moderate-explainer{
+        grid-row:3;
+    }
+    .little-explainer{
+        grid-row:4;
+    }
+}
