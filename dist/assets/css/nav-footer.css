@@ -19,3 +19,9 @@ nav ul, footer ul {
     font-weight: bold; }
   nav ul .fab, footer ul .fab {
     font-size: 23px; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 960px; }
