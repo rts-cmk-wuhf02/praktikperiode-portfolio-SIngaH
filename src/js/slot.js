@@ -1,12 +1,7 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function () {
-  //-------------------kontakt scroll to
-  var kontakt = document.getElementById("Kontakt");
-  kontakt.addEventListener("click", function () {
-    window.scrollTo(0, 550);
-  }); //-------------------slot machine
-
+ //-------------------slot machine
   var SlotArray = ["appelsin", "bar", "blomme", "citron", "diamant", "jordbaer", "kirsebaer", "klokker", "melon", "syv", "appelsin", "blomme", "citron", "diamant", "jordbaer", "kirsebaer", "klokker", "melon", "syv", "appelsin", "blomme", "citron", "diamant", "jordbaer", "kirsebaer", "klokker", "melon"];
   var showArr = [0, 1, 2];
   var slot1 = document.querySelector(".slot1");

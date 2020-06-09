@@ -8,6 +8,6 @@ main{
     grid-template-rows:11% 80% 10%;
     grid-template-columns: repeat(5, 20%);
 }
-main div{
+.header, .main, .win-or-lose, .footer{
     display:contents;
 }

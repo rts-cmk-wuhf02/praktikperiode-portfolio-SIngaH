@@ -5,9 +5,10 @@
     background-color:#7532a8;
     font-size: 22px;
     text-align: center;
-    padding:2%;
+    padding:1%;
     font-weight: normal;
     position: relative;
+    margin:7px 0;
 }
 .footer__btn{
     cursor: pointer;
@@ -35,14 +36,4 @@ h2{
 .btn_spin:hover{
     color:#0f0;
     border:solid 3px #0f0;
-}
-
-/*--------------den aktuelle footer--------------*/
-footer, .footer_kontakt-mugligheder{
-    line-height:2;
-    margin-top:0.5%;
-}
-//---------------the real footer
-footer h3{
-    padding:0;
 }

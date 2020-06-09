@@ -1,5 +1,6 @@
 nav ul, footer ul{
     padding:0;
+    margin:0;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -8,7 +9,7 @@ nav ul, footer ul{
         font-size:20px;
         text-decoration: underline 2px;
         text-transform: uppercase;
-        margin:1% 0;
+        padding:1% 0;
         &:hover{
             text-decoration: line-through 2px;
             font-weight: bold;
