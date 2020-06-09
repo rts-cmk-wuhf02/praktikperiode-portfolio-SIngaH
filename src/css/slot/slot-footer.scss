@@ -1,0 +1,48 @@
+.footer__btn, .footer__points, .footer__text{
+    grid-row:3;
+    border:solid 3px var(--blue-color);
+    color:var(--blue-color);
+    background-color:var(--purple-color);
+    font-size: 22px;
+    text-align: center;
+    padding:2%;
+    font-weight: normal;
+    position: relative;
+}
+.footer__btn{
+    cursor: pointer;
+}
+h2{
+    cursor: default;
+}
+.footer__points{
+    grid-column:1;
+}
+.footer__text{
+    grid-column:2/span 3;
+    position: relative;
+}
+.btn_stop{
+    grid-column: 4;
+}
+.btn_spin{
+    grid-column:5;
+}
+.btn_stop:hover{
+    color:var(--red-color);
+    border:solid 3px var(--red-color);
+}
+.btn_spin:hover{
+    color:var(--green-color);
+    border:solid 3px var(--green-color);
+}
+
+/*--------------den aktuelle footer--------------*/
+footer, .footer_kontakt-mugligheder{
+    line-height:2;
+    margin-top:0.5%;
+}
+//---------------the real footer
+footer h3{
+    padding:0;
+}

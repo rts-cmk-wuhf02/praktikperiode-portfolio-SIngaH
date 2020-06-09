@@ -1,0 +1,22 @@
+.win-or-lose{
+    grid-row:2;
+    grid-column:1;
+}
+.wins-count{
+    color:var(--green-color);
+    place-self: center;
+    font-size:28px;
+    background-color:var(--purple-color);
+    border:solid 3px var(--green-color);
+    padding:5%;
+    margin:5%;
+}
+.losses-count{
+    color:var(--red-color);
+    place-self: center;
+    font-size:28px;
+    background-color:var(--purple-color);
+    border:solid 3px var(--red-color);
+    padding:5%;
+    margin:5%;
+}

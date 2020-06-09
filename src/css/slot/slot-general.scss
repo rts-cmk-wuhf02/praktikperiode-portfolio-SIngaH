@@ -1,0 +1,13 @@
+main{
+    background: url("../../images/background-img.jpg");
+    background-repeat: no-repeat;
+    background-position: top;  
+    background-size:100%;   
+    padding-top: 2%;
+    display:grid;
+    grid-template-rows:11% 80% 10%;
+    grid-template-columns: repeat(5, 20%);
+}
+main section{
+    display:contents;
+}

@@ -1,0 +1,50 @@
+<%- include("../partials/head") %>
+<link rel="stylesheet" href="assets/css/slot/slot.css">
+    <title>SIH - webudvikler</title>
+</head>
+<body>
+    <div id="wrapper">
+        <%- include("../partials/header") %>
+        <%- include("../partials/nav") %>
+
+            <main>
+                <div class="header">
+                    <h1>JACKPOT!</h1>
+                </div>
+                
+                <div class="main">
+                    <div class="main__slot slot1">
+            
+                    </div>
+                    <div class="main__slot slot2">
+            
+                    </div> 
+                    <div class="main__slot slot3">
+            
+                    </div> 
+                    <div id="error-box">
+                        <h2 class="error-box-text">You need a 100 points to play!</h2>
+                    </div>
+                    <div id="winner-box">
+                        <h2 class="winner-box-text">Winner</h2>
+                    </div>
+                </div>
+
+                <div class="win-or-lose">
+                    <h2 class="wins-count"></h2>
+                    <h2 class="losses-count"></h2>
+                </div>
+                
+                <div class="footer">
+                    <h2 class="footer__points"></h2>
+                    <h2 class="footer__text">100 points to play</h2>
+                    <button class="footer__btn btn_spin">Spin</button>
+                </div>
+
+            </main>
+            
+            
+            <%- include("../partials/footer") %>
+            <script src="assets/js/slot.js"></script>
+    <%- include("../partials/last") %>
+

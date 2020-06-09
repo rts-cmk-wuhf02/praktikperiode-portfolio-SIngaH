@@ -1,0 +1,20 @@
+.header{
+    text-align:center;
+    h1{
+        font-size:40px;
+        color:var(--blue-color);
+        text-decoration: underline;
+        grid-row: 1;
+        grid-column: 1/span 5;
+    }
+}
+
+.blink {
+    animation: blinker 1s linear infinite;
+}
+  
+@keyframes blinker {
+    0%{color:var(--blue-color);}
+    50% {color:var(--green-color);}
+    100%{color:var(--blue-color);}
+}

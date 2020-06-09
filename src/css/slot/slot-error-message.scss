@@ -1,0 +1,16 @@
+#error-box{
+    display:none;
+    border:solid 5px var(--red-color); 
+    color:var(--red-color);
+    background-color:var(--purple-color);
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    left:30%;
+}
+.error-box-text{
+    text-align:center;
+    padding:4% 0;   
+    font-size:30px;
+    text-decoration: underline;
+}
