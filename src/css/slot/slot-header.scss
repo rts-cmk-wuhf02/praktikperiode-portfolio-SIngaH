@@ -2,7 +2,7 @@
     text-align:center;
     h1{
         font-size:40px;
-        color:var(--blue-color);
+        color:#57e3ff;
         text-decoration: underline;
         grid-row: 1;
         grid-column: 1/span 5;
@@ -14,7 +14,7 @@
 }
   
 @keyframes blinker {
-    0%{color:var(--blue-color);}
-    50% {color:var(--green-color);}
-    100%{color:var(--blue-color);}
+    0%{color:#57e3ff;}
+    50% {color:#0f0;}
+    100%{color:#57e3ff;}
 }

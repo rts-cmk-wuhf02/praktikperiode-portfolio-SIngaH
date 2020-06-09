@@ -3,20 +3,20 @@
     grid-column:1;
 }
 .wins-count{
-    color:var(--green-color);
+    color:#0f0;
     place-self: center;
     font-size:28px;
-    background-color:var(--purple-color);
-    border:solid 3px var(--green-color);
+    background-color:#7532a8;
+    border:solid 3px #0f0;
     padding:5%;
     margin:5%;
 }
 .losses-count{
-    color:var(--red-color);
+    color:#f00;
     place-self: center;
     font-size:28px;
-    background-color:var(--purple-color);
-    border:solid 3px var(--red-color);
+    background-color:#7532a8;
+    border:solid 3px #f00;
     padding:5%;
     margin:5%;
 }

@@ -1,8 +1,8 @@
 .footer__btn, .footer__points, .footer__text{
     grid-row:3;
-    border:solid 3px var(--blue-color);
-    color:var(--blue-color);
-    background-color:var(--purple-color);
+    border:solid 3px #57e3ff;
+    color:#57e3ff;
+    background-color:#7532a8;
     font-size: 22px;
     text-align: center;
     padding:2%;
@@ -29,12 +29,12 @@ h2{
     grid-column:5;
 }
 .btn_stop:hover{
-    color:var(--red-color);
-    border:solid 3px var(--red-color);
+    color:#f00;
+    border:solid 3px #f00;
 }
 .btn_spin:hover{
-    color:var(--green-color);
-    border:solid 3px var(--green-color);
+    color:#0f0;
+    border:solid 3px #0f0;
 }
 
 /*--------------den aktuelle footer--------------*/

@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", ()=>{
     //-----------------------------arrow fetch
     let index = 1;
-    fetching();
+    fetching(index);
     document.querySelector(".right-arrow").addEventListener("click", ()=>{
         if(index === 12){
             index = 1;
         }else{
             index ++;
         }
-        fetching();
+        fetching(index);
     });
     document.querySelector(".left-arrow").addEventListener("click", ()=>{
         if(index === 1){
@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }else{
             index --;
         }
-        fetching();
+        fetching(index);
     });   
     
     //-----------------------------galleri
-    function fetching(){
+    function fetching(index){
         fetch("https://singas.herokuapp.com/products/?sku=" + index, {
             "method": "GET"
         })
