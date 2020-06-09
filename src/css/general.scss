@@ -18,20 +18,18 @@ body{
     display:flex;
     flex-direction:column;
     justify-content:space-evenly;
-}
-h2{
-    font-size:26px;
-    a{
-        font-size:18px;
-    }
-}
-#wrapper{
     background-color:#fff;
     section{
         border:solid 2px black;
         background-color:  var(--section-color);
         margin:3%;
         padding:5%;
+    }
+}
+h2{
+    font-size:26px;
+    a{
+        font-size:18px;
     }
 }
 header{
