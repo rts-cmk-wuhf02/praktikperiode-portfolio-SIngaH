@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         "I skolen havde vi en wordpress uge og det var nok til at jeg kan sikkert lave en side og en tema uden problemer. Jeg har lavet en tema for mig selv men har ikke udgivet den."
     ]
 
-
     let muchExplainer =  document.querySelector(".much-explainer");
 
     let muchLier = document.querySelectorAll(".much li");
@@ -98,7 +97,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     }
 
     function arrowM(e){
-        moderateLiArray.forEach(Img => {
+        moderateImgArray.forEach(Img => {
             Img.classList.remove("move-arrow");
         });
         e.target.classList.add("move-arrow");
