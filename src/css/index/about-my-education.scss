@@ -19,6 +19,15 @@
             li{
                 list-style: none;
                 text-transform: capitalize;
+                position: relative;
+                .li-arrow{
+                    cursor: pointer;
+                    width:10%;
+                    transform: rotate(180deg);
+                    position: relative;
+                    top: 20%;
+                    left: 0;
+                }
             }
         }
     }
@@ -27,11 +36,24 @@
     }
     .much-explainer{
         grid-row:2;
+        padding-top: 29%;
     }
     .moderate-explainer{
         grid-row:3;
+        padding-top: 29%;
     }
     .little-explainer{
         grid-row:4;
+        padding-top: 29%;
+    }
+    .move-arrow{
+        animation: arrow 2s forwards normal;
+    }
+}
+
+@keyframes arrow{
+    to{
+        top: 20%;
+        left: 51%;
     }
 }
