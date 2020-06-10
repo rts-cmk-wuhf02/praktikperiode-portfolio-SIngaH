@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     sql - Jeg lærte lidt om SQL, men jeg brugte det ikke meget, men da vi lærte det så var jeg overasked over hvor god jeg var til det.
 
 */
+//-----------------------Much
     const muchArray = [
         "Jeg har arbejdet med html hver dag fra januar 2019 til oktober 2020.", 
         "Jeg har arbejdet med css hver dag fra januar 2019 til oktober 2020. Jeg er blevet god til grids og flexbox.", 
@@ -42,11 +43,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
         "Github har jeg brugt constant fra august 2019 til oktiber 2020. Jeg syns det er et genielt værktøj, men har en gang i mellem problemmer med. Men det er altid godt at vide at hvis noget går galt har man alt sin kode et sted.",
         "I skolen havde vi en wordpress uge og det var nok til at jeg kan sikkert lave en side og en tema uden problemer. Jeg har lavet en tema for mig selv men har ikke udgivet den."
     ]
-// let moderateArray = []
-// let littleArray = []
+
+
     let muchExplainer =  document.querySelector(".much-explainer");
-    let moderateExplainer = document.querySelector(".moderate-explainer");
-    let littleExplainer = document.querySelector(".little-explainer");
 
     let muchLier = document.querySelectorAll(".much li");
     let liArray = Array.from(muchLier);
@@ -73,4 +72,76 @@ document.addEventListener("DOMContentLoaded", ()=>{
     function muchChange(e){        
         muchExplainer.innerHTML = muchArray[ImgArray.indexOf(e.target)];
     }
+
+//-----------------------Moderate
+    let moderateArray = [
+        "React har jeg arbejdet med i nogle projekter, jeg har stadigvæk lidt problemer med det, men jeg kunne godt få det til at virke med lidt hjælp.",
+        "Jeg fik lært lidt SEO men i skolen brugte vi kun et par dage på at lære det, så det mangler at blive genfrisket.",
+        "Lazy loading lært jeg sammen med animationer. Jeg kan godt gøre det men vil mangle at kigge på en gammel kode for at huske alting.",
+        "Tailwind var meget nem at lære og bruge. Så selvom jeg har ikke brugt det meget så kunne jeg godt gøre det.",
+        "Bootstrap var også nem at bruge men jeg har ikke brugt det meget. Jeg kunne stadigvæk godt bruge det.",
+        "I skolen var der 2 uger hvor vi skulle programmere en philips hue lysepære. Jeg lavede et programm hvor lyset tændte sig selv da skolen startede, farven på lyset skiftede i pauserne. Lyset var også slukket da skoledagen var færdig(ikke samme tid hver dag) og lyset slukkede også i weekenderne."
+    ];
+    let moderateExplainer = document.querySelector(".moderate-explainer");
+    let moderateLier = document.querySelectorAll(".moderate li");
+    let moderateLiArray = Array.from(moderateLier);
+
+    for(let i=0; i< moderateLiArray.length; i++){
+        moderateLiArray[i].addEventListener("click", moderateChange);
+    }
+
+    let moderateImgs = document.querySelectorAll(".li-arrow2");
+    let moderateImgArray = Array.from(moderateImgs);
+    
+    for(let i=0; i< moderateImgArray.length; i++){
+        moderateImgArray[i].addEventListener("click", arrowM);
+    }
+
+    function arrowM(e){
+        moderateLiArray.forEach(Img => {
+            Img.classList.remove("move-arrow");
+        });
+        e.target.classList.add("move-arrow");
+        moderateChange();
+    }
+
+    function moderateChange(e){        
+        moderateExplainer.innerHTML = moderateArray[moderateImgArray.indexOf(e.target)];
+    }
+
+
+//-----------------------Little
+    let littleArray = [
+        "Jeg lærte også lidt om headless cms, det programm jeg arbejdede med var Gatsby sammen med contentful. Det syns jeg var svært og der var mange problemer der følgte Gasby.",
+        "Jeg lærte lidt om php fordi vi lærte wordpress. Jeg kan ikke rigtig gøre meget med det, men det så ud til at være ret nemt at lære.",
+        "Jeg lærte lidt om SQL, men jeg brugte det ikke meget, men da vi lærte det så var jeg overasked over hvor god jeg var til det."
+    ];
+    let littleExplainer = document.querySelector(".little-explainer");
+
+    let littleLier = document.querySelectorAll(".little li");
+    let littleLiArray = Array.from(littleLier);
+
+    for(let i=0; i< littleLiArray.length; i++){
+        littleLiArray[i].addEventListener("click", littleChange);
+    }
+
+    let littleImgs = document.querySelectorAll(".li-arrow3");
+    let littleImgArray = Array.from(littleImgs);
+
+    for(let i=0; i< littleImgArray.length; i++){
+        littleImgArray[i].addEventListener("click", arrowL);
+    }
+
+    function arrowL(e){
+        littleImgArray.forEach(Img => {
+            Img.classList.remove("move-arrow");
+        });
+        e.target.classList.add("move-arrow");
+        littleChange();
+    }
+
+    function littleChange(e){        
+        littleExplainer.innerHTML = littleArray[littleImgArray.indexOf(e.target)];
+    }
+
 });
