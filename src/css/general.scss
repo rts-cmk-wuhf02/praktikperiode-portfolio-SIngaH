@@ -100,3 +100,8 @@ nav, footer{
         font-size: 11px;
     }
 }
+@media only screen and (max-width:320px){
+    p, li{
+        font-size: 7px;
+    }
+}
