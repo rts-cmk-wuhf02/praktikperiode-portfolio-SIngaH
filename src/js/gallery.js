@@ -54,24 +54,4 @@ document.addEventListener("DOMContentLoaded", ()=>{
             imgChange.setAttribute("src", imgArray[index]);   
             imgChange.setAttribute("alt", nameArray[index]);    
         }
-    
-    /*-------------------------------json-------------------------------*/
-        // const doctorData = fetch("./json/doctors.json")
-        // .then(function(response){
-        //     return response.json()
-        // }).then(function(doctorData){
-        //     document.querySelector(".site2_the_doctors").innerHTML = `
-        //     <h1 class="the_doctors_h1">${doctorData.h1}</h1>
-        //     <img src="${doctorData.img}" alt="an image of all the doctors" class="the_doctors_img">
-        //     <p class="the_doctors_p1">Thirteen actors have headlined the series as the Doctor. 
-        //         The transition from one actor to another is written into the plot of the show with the concept of 
-        //         regeneration into a new incarnation, a plot device in which a Time Lord "transforms" into a new body when 
-        //         the current one is too badly harmed to heal normally. </p>
-        //     <p class="the_doctors_p2">Each actor's portrayal is unique, but all represent stages in the life of the same character. 
-        //         Together, they form a single lifetime with a single narrative. The time-travelling feature of the plot means 
-        //         that different incarnations of the Doctor occasionally meet. The Doctor is currently portrayed by Jodie Whittaker, 
-        //         who took on the role after Peter Capaldi's exit in the 2017 Christmas special ´Twice Upon a Time´.</p>
-        //     `
-    
-        // })
     });
