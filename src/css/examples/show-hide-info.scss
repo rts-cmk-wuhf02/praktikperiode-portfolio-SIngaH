@@ -1,28 +1,5 @@
-// #show-hide-info{
-//     display:grid;
-//     grid-template-columns: 60% 35%;
-//     column-gap:5%;
-//     .show-hide-ul{
-//         text-align: start;
-//     }
-//     .show-hide-li{
-//         list-style-type: none;
-//     }
-//     #show-hide-number{
-//         background-color:var(--green);
-//         width:100%;
-//         height:100%;
-//         display:grid;
-//         p{
-//             place-self:center;
-//             font-size:35px;
-//         }
-//     }
-// }
-
 #show-hide-info{
     display:grid;
-    grid-template-rows: 70% 30%;
     grid-template-columns: 60% 40%;
     padding:5% 4%;
 }
