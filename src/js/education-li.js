@@ -54,15 +54,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
     function ChangeText(e){     
         let Index = ImgArray.indexOf(e.target);
         if(Index < 13){
-            muchExplainer.innerHTML = MoreInfoArray[Index];
+            muchExplainer.innerHTML = `<p>` + MoreInfoArray[Index] + `</p>`;
             moderateExplainer.innerHTML = "";
             littleExplainer.innerHTML = "";
         }else if(Index > 12 && Index < 19){
-            moderateExplainer.innerHTML = MoreInfoArray[Index];
+            moderateExplainer.innerHTML = `<p>` + MoreInfoArray[Index] + `</p>`;
             muchExplainer.innerHTML = "";
             littleExplainer.innerHTML = "";
         }else if(Index > 18){
-            littleExplainer.innerHTML = MoreInfoArray[Index];
+            littleExplainer.innerHTML = `<p>` + MoreInfoArray[Index] + `</p>`;
             muchExplainer.innerHTML = "";
             moderateExplainer.innerHTML = "";
         }

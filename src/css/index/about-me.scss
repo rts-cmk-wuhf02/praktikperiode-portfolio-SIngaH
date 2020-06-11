@@ -1,17 +1,18 @@
 #about-me{
     display:flex;
     justify-content:space-evenly;
-    .about-me-text{
-        grid-row:2;
-        grid-column:1;
-    }
     img{
-        grid-row:2;
-        place-self:start center;
         width:57%;
+        height:40%;
     }
-    p a{
-        color:#fff;
-        text-decoration: underline 2px;
+    .about-me-text{
+        padding-right: 2%;
+        h2{
+            text-align: center;
+        }
+        p a{
+            color:#fff;
+            text-decoration: underline 2px;
+        }
     }
 }

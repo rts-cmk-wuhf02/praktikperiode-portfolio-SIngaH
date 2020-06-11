@@ -4,7 +4,6 @@ html{
 }
 body{
     max-width:960px;
-    min-width:320px;
     margin:0 auto;
     font-family: 'Space Mono', monospace;
     letter-spacing: 2px;
@@ -28,6 +27,7 @@ body{
 }
 h2{
     font-size:26px;
+    margin-top:0;
     a{
         font-size:18px;
     }
@@ -44,4 +44,59 @@ header{
 }
 nav, footer{
     background-color:var(--green);
+}
+@media only screen and (max-width:408px){
+    header a{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width:350px){
+    header a{
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width:872px){
+    h2{
+        font-size:24px;
+    }
+    h3{
+        font-size: 17px;
+    }
+    p, li{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:800px){
+    h2{
+        font-size:22px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    p, li{
+        font-size: 12px;
+    }
+    #about-me img{
+        display:none;
+    }
+}
+@media only screen and (max-width:543px){
+    h2{
+        font-size:20px;
+    }
+    h3{
+        font-size: 13px;
+    }
+    p, li{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:543px){
+    h2{
+        font-size:18px;
+    }
+    h3{
+        font-size: 11px;
+    }
 }
