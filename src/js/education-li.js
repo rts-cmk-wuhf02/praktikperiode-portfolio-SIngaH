@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     let LiArray = Array.from(Lier);
 
     for(let i=0; i< LiArray.length; i++){
-        LiArray[i].addEventListener("click", ChangeText);
+        LiArray[i];
     }
 
     let Imgs = document.querySelectorAll(".li-arrow");

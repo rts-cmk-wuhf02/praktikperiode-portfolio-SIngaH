@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     //-----------------------------arrow fetch
     let index = 1;
     fetching(index);
-    document.querySelector(".right-arrow").addEventListener("click", ()=>{
+    document.querySelector("#right-arrow").addEventListener("click", ()=>{
         if(index === 12){
             index = 1;
         }else{
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
         fetching(index);
     });
-    document.querySelector(".left-arrow").addEventListener("click", ()=>{
+    document.querySelector("#left-arrow").addEventListener("click", ()=>{
         if(index === 1){
             index = 12;
         }else{
