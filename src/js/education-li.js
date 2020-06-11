@@ -46,9 +46,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
     function arrow(e){
         ImgArray.forEach(Img => {
             Img.classList.remove("move-arrow");
+            Img.style.width="10%";
         });
         e.target.classList.add("move-arrow");
         ChangeText(e);
+
     }
 
     function ChangeText(e){     
