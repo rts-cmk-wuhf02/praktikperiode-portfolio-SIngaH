@@ -1,4 +1,4 @@
-.left-arrow{
+#left-arrow{
     transform: rotate(180deg);
 }
 #API .section-div{
@@ -9,10 +9,10 @@
         font-size:30px;
         text-decoration: underline;
     }
-    .right-arrow{
+    #right-arrow{
         place-self:center flex-end;
     }
-    .left-arrow{
+    #left-arrow{
         place-self: center flex-start;
     }
     p{
