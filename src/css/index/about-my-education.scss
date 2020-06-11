@@ -33,6 +33,7 @@
     }
     .much-explainer, .moderate-explainer, .little-explainer{
         grid-column:2;
+        text-transform: capitalize;
     }
     .much-explainer{
         grid-row:2;
