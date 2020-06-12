@@ -46,13 +46,16 @@ nav, footer{
     background-color:var(--green);
 }
 @media only screen and (max-width:872px){
+    #scroll-to-form{
+        font-size:30px;
+    }
     h2, #scrool-to-form #h2{
         font-size:24px;
     }
     h3, #API .section-div .cheese-name{
         font-size: 17px;
     }
-    p, h2 a li, h2 a, a, .the-companions_details summary, .the-companions_details p{
+    p, h2 a li, h2 a, .the-companions_details summary, .the-companions_details p{
         font-size: 14px;
     }
     p a{
@@ -60,6 +63,9 @@ nav, footer{
     }
 }
 @media only screen and (max-width:800px){
+    #scroll-to-form{
+        font-size:28px;
+    }
     h2{
         font-size:22px;
     }
@@ -74,8 +80,11 @@ nav, footer{
     }
 }
 @media only screen and (max-width:542px){
+    #scroll-to-form{
+        font-size:26px;
+    }
     h2{
-        font-size:20px;
+        font-size:15px;
     }
     h3, #API .section-div .cheese-name{
         font-size: 13px;
@@ -85,7 +94,7 @@ nav, footer{
     }
 }
 @media only screen and (max-width:400px){
-    header a{
+    header h1 a{
         font-size: 40px;
     }
     p, li, .the-companions_details summary, .the-companions_details p{
@@ -93,13 +102,13 @@ nav, footer{
     }
 }
 @media only screen and (max-width:350px){
-    header a{
+    header h1 a{
         font-size: 36px;
     }
 }
 @media only screen and (max-width:320px){
-    header h1 a{
-        font-size: 36px;
+    #scroll-to-form{
+        font-size:19px;
     }
     p, li, .the-companions_details summary, .the-companions_details p{
         font-size: 7px;
@@ -109,8 +118,5 @@ nav, footer{
     }
     h3, #API .section-div .cheese-name{
         font-size: 12px;
-    }
-    #API #section-div #left-arrow, #API #section-div #right-arrow{
-        width: 53%;
     }
 }

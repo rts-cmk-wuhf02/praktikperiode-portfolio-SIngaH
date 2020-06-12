@@ -41,6 +41,7 @@
 @media only screen and (max-width:872px){
     #form{
         form{
+            grid-template-columns: 23% 77%;
             .form-input, textarea{
                 font-size: 14px;
             }
@@ -58,6 +59,17 @@
         font-size:14px;    
     }
 }
+@media only screen and (max-width:585px){
+    #form{
+        form{
+            grid-template-columns: 30% 70%;
+            .form__submit {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width:542px){
     .formgroup, #form .formgroup #form-input{
         font-size: 10px;
