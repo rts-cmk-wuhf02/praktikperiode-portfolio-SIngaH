@@ -38,3 +38,51 @@
         }
     }
 }
+@media only screen and (max-width:872px){
+    #form{
+        form{
+            .form-input, textarea{
+                font-size: 14px;
+            }
+            .form__submit{
+                font-size:14px;    
+            }
+        }
+    }
+}
+@media only screen and (max-width:800px){
+    .formgroup, #form .formgroup #form-input{
+        font-size: 12px;
+    }
+    .form__submit{
+        font-size:14px;    
+    }
+}
+@media only screen and (max-width:542px){
+    .formgroup, #form .formgroup #form-input{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:400px){
+    header a{
+        font-size: 40px;
+    }
+    .formgroup, #form .formgroup #form-input {
+        font-size:6px;
+    }
+    #form #the-form{
+        grid-template-columns: 29% 72%;
+    }
+}
+@media only screen and (max-width:320px){
+    #form form #scoll-to-api{
+        width: 24%;
+        font-size: 10px;
+    }
+    .formgroup, #form .formgroup #form-input{
+        font-size: 7px;
+    }
+    .form__submit{
+        font-size:10px;    
+    }
+}

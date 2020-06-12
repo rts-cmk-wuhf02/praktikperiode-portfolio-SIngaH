@@ -7,37 +7,37 @@
         <%- include("../partials/header") %>
         <%- include("../partials/examples-nav") %>
         <main>
-            <h1 id="scroll-to-form">Her kan du se nogle af de ting jeg kan</h1>
+            <h2 id="scroll-to-form">Her kan du se nogle af de ting jeg kan</h2>
             <section id="form">
                 <h2>Formen er kun for at vise at jeg kan lave form validering</h2>
-                <form action="javascript:alert('Du har udfyldt formen rigtigt')" method="post" class="form validate"> 
+                <form action="javascript:alert('Du har udfyldt formen rigtigt')" method="post" class="form validate" id="the-form"> 
                     <div class="formgroup">
                         <label class="form_label form_label_name">Dit navn :</label>
-                        <input name="name" class="form__name form-input" placeholder="Dit navn" required pattern=".{3,}">
+                        <input name="name" class="form__name form-input" id="form-input" placeholder="Dit navn" required pattern=".{3,}">
                         <span class="error error1"></span>
                     </div>
                     
                     <div class="formgroup">
                         <label class="form_label form_label_last_name">Virksomhed :</label>
-                        <input type="name" name="last name" class="form__virksomhed form-input" placeholder="Virksomhedens navn" required pattern=".{3,}">
+                        <input type="name" name="last name" class="form__virksomhed form-input" id="form-input" placeholder="Virksomhedens navn" required pattern=".{3,}">
                         <span class="error error2"></span>
                     </div>
                     
                     <div class="formgroup">
                         <label class="form_label form_label_email">Email :</label>
-                        <input type="email" name="emailaddress" class="form__email form-input" placeholder="Email" required pattern=".+\.[a-z]{2,}$">
+                        <input type="email" name="emailaddress" class="form__email form-input" id="form-input" placeholder="Email" required pattern=".+\.[a-z]{2,}$">
                         <span class="error error3"></span>
                     </div>
                     
                     <div class="formgroup">
                         <label class="form_label mobil">Telefon :</label>
-                        <input type="tel" name="Telefon" placeholder="52146815" class="form__phone form-input" required pattern="[0-9]{8}"> 
+                        <input type="tel" name="Telefon" placeholder="52146815" class="form__phone form-input" id="form-input" required pattern="[0-9]{8}"> 
                         <span class="error error4"></span>
                     </div>
                     
                     <div class="formgroup">
                         <label class="form_label form_label_message">Besked :</label>
-                        <textarea class="form__textarea" name="comment form-input" rows="5" placeholder="Skriv din besked her..." required></textarea>
+                        <textarea class="form__textarea" name="comment form-input" id="form-input" rows="5" placeholder="Skriv din besked her..." required></textarea>
                         <span class="error error5"></span>
                     </div>
                     
@@ -47,7 +47,7 @@
 
             <section id="API">
                 <h2>Alle informationer her bliver hentet fra et API jeg lavede i skolen</h2>
-                <div class="section-div">
+                <div class="section-div" id="section-div">
                     <img src="../assets/images/arrow.png" alt="left arrow" id="left-arrow">
                     <div>
                         <h3 class="cheese-name"></h3>
@@ -74,7 +74,7 @@
                 <img src="assets/images/gallery/doctor_ce.jpg" alt="Christopher Eccleston" class="gallery_img_change">
                 <img src="assets/images/gallery/arrow_left.png" alt="left arrow" class="left_arrow">
                 <img src="assets/images/gallery/arrow_left.png" alt="right arrow" class="right_arrow">
-                <h1 class="gallery_h1_change">Christopher Eccleston</h1>
+                <h1 class="gallery_h1_change" id="gallery_h1_change">Christopher Eccleston</h1>
                 <div class="gallery_change_p">
                     <p class="gallery_p_change">Ninth Doctor: Christopher Eccleston (2005). The sole survivor of the Last Great Time War, 
                         scarred by the terrible things he’d seen and done, the Ninth Doctor was an intense and emotional incarnation.</p>
@@ -85,12 +85,10 @@
             <%- include("../partials/show-hide") %>
             <section id="old-link">
                 <h2>Gammel portfolio</h2>
-                <div>
-                    <p>Denne link er til en portfolio jeg lavede i slutningen af grundforløbet af min uddannelse, 
-                        så de sider portfolioen linker til er ret gamle og siger ikke meget om hvad jeg kan gøre nu. 
-                        Du skal ikke kontakte mig igennem oplysninger på siden nedenfor her, fordi de har ændret sig siden den side blev lavet.</p>
-                    <a href="http://grafisk.nextkbh.dk/elever/inga0600/portfolio/" target="_blank">Her er min gamle portfolio</a>                        
-                </div>
+                <p>Denne link er til en portfolio jeg lavede i slutningen af grundforløbet af min uddannelse, 
+                    så de sider portfolioen linker til er ret gamle og siger ikke meget om hvad jeg kan gøre nu. 
+                    Du skal ikke kontakte mig igennem oplysninger på siden nedenfor her, fordi de har ændret sig siden den side blev lavet.</p>
+                <a href="http://grafisk.nextkbh.dk/elever/inga0600/portfolio/" target="_blank">Her er min gamle portfolio</a>                        
             </section>
         </main>
         <%- include("../partials/footer") %>

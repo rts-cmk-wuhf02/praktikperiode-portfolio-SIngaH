@@ -45,9 +45,51 @@ header{
 nav, footer{
     background-color:var(--green);
 }
-@media only screen and (max-width:408px){
+@media only screen and (max-width:872px){
+    h2, #scrool-to-form #h2{
+        font-size:24px;
+    }
+    h3, #API .section-div .cheese-name{
+        font-size: 17px;
+    }
+    p, h2 a li, h2 a, a, .the-companions_details summary, .the-companions_details p{
+        font-size: 14px;
+    }
+    p a{
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width:800px){
+    h2{
+        font-size:22px;
+    }
+    h3, #API .section-div .cheese-name{
+        font-size: 15px;
+    }
+    p, li, .the-companions_details summary, .the-companions_details p{
+        font-size: 12px;
+    }
+    #about-me img{
+        display:none;
+    }
+}
+@media only screen and (max-width:542px){
+    h2{
+        font-size:20px;
+    }
+    h3, #API .section-div .cheese-name{
+        font-size: 13px;
+    }
+    p, li, .the-companions_details summary, .the-companions_details p{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:400px){
     header a{
         font-size: 40px;
+    }
+    p, li, .the-companions_details summary, .the-companions_details p{
+        font-size:7px;
     }
 }
 @media only screen and (max-width:350px){
@@ -55,53 +97,20 @@ nav, footer{
         font-size: 36px;
     }
 }
-
-@media only screen and (max-width:872px){
-    h2{
-        font-size:24px;
+@media only screen and (max-width:320px){
+    header h1 a{
+        font-size: 36px;
     }
-    h3{
-        font-size: 17px;
+    p, li, .the-companions_details summary, .the-companions_details p{
+        font-size: 7px;
     }
-    p, li{
-        font-size: 14px;
-    }
-}
-@media only screen and (max-width:800px){
-    h2{
-        font-size:22px;
-    }
-    h3{
-        font-size: 15px;
-    }
-    p, li{
-        font-size: 12px;
-    }
-    #about-me img{
-        display:none;
-    }
-}
-@media only screen and (max-width:543px){
-    h2{
-        font-size:20px;
-    }
-    h3{
+    h2, #gallery #gallery_h1_change {
         font-size: 13px;
     }
-    p, li{
-        font-size: 10px;
+    h3, #API .section-div .cheese-name{
+        font-size: 12px;
     }
-}
-@media only screen and (max-width:543px){
-    h2{
-        font-size:18px;
-    }
-    h3{
-        font-size: 11px;
-    }
-}
-@media only screen and (max-width:320px){
-    p, li{
-        font-size: 7px;
+    #API #section-div #left-arrow, #API #section-div #right-arrow{
+        width: 53%;
     }
 }

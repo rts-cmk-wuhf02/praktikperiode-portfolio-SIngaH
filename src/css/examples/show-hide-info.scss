@@ -13,6 +13,7 @@
     list-style-type: none;
     text-align: start;
     grid-row:3; 
+    padding-left: 0;
 }
 .the-companions_li{
     border-bottom:solid 1px #000;
@@ -34,4 +35,17 @@
 }
 .the_companions_details_p, .the-companions_summary{
     font-size:14px;
+}
+@media only screen and (max-width:358px){
+    .section__the_companions-images, .the_companions-img{
+        display:none;
+    }
+    #show-hide-info{
+        grid-template-columns: 100%;
+    }
+}
+@media only screen and (max-width:320px){
+    #old-link a{
+        font-size: 11px;
+    }
 }

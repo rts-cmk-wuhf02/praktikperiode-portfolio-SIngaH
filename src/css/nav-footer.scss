@@ -44,6 +44,7 @@ nav ul, footer ul{
     }
     .fa-home{
         font-size: 20px;
+        padding-left:1%;
     }
 }
 .sticky{
@@ -53,6 +54,7 @@ nav ul, footer ul{
     max-width: 960px;
     z-index: 1;
 }
+
 @media only screen and (max-width: 900px){
     nav .drop-down li a, .fa-linkedin, .fa-home{
         font-size:18px;
@@ -92,6 +94,7 @@ nav ul, footer ul{
     }
     nav ul li a .fa-home{
         font-size: 30px;
+        padding-left:0%;
     }
     nav li a{
         font-size: 14px;
