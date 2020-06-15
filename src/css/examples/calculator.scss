@@ -3,15 +3,9 @@
     grid-template-rows:minmax(120px, auto) repeat(5, 100px);
     grid-template-columns:repeat(4, 25%);
     padding:5% 17%;
-    #answer, button{
-        background-color: whitesmoke;
-        border:solid 1px black;
-        margin:0;
-    }
     #answer{
         grid-row:1;
         grid-column:1/span 4;
-        padding: 3%;
         display:flex;
         align-items:flex-end;
         justify-content: space-around;
@@ -19,6 +13,10 @@
         padding:5%;
         word-wrap: break-word;
         word-break:break-all;
+        background-color: #000;
+        opacity: 1;
+        color:#fff;
+        margin:0;
         .previous{
             font-size: 1.5rem;
             color:grey;
@@ -34,8 +32,14 @@
         cursor: pointer;
         font-size: 2rem;
         place-self:center;
+        background-color: whitesmoke;
+        margin:0;
+        border:solid 2px #000;
         &:hover{
-            border:solid 1px blue;
+            border:solid 2px #fff;
+            background-color: #000;
+            color:#fff;
+            opacity: 1;
         }
     }
     .span-two{
