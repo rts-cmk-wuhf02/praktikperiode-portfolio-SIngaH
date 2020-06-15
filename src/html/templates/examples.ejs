@@ -7,7 +7,7 @@
         <%- include("../partials/header") %>
         <%- include("../partials/examples-nav") %>
         <main>
-            <h1 id="scroll-to-form">Her kan du se nogle af de ting jeg kan</h1>
+            <h1>Her kan du se nogle af de ting jeg kan</h1>
             <section id="form">
                 <h2>Formen er kun for at vise at jeg kan lave form validering</h2>
                 <form action="javascript:alert('Du har udfyldt formen rigtigt')" method="post" class="form validate" id="the-form"> 
@@ -51,8 +51,6 @@
                     vi skulle lave så få componenter som mugligt, og genbruge dem mange steder
                 </p>
                 <p><a href="https://github.com/SIngaH/uicomponents" target="_blank">Click her for at kigge på koden (på github)</a></p>
-                <!-- <img src="assets/images/uicomponents/uiComponents.png" alt="uicomponents">
-                <img src="assets/images/uicomponents/uiComponents2.png" alt="uicomponents"> -->
                 <img src="assets/images/uicomponents/ui2.png" alt="uicomponents">
                 <img src="assets/images/uicomponents/ui.png" alt="uicomponents">
                 <div id="api-scroll"></div>
@@ -96,6 +94,32 @@
                 </div>
             </section>
             <%- include("../partials/show-hide") %>
+
+            <section id="calculator">
+                <div id="answer"><!--output-->
+                    <div data-previous-operand class="previous"></div>
+                    <div data-current-operand class="current"></div>
+                </div>
+                <button data-all-clear class="span-two">AC</button>
+                <button data-delete>DEL</button>
+                <button data-operation>%</button>
+                <button data-number>1</button>
+                <button data-number>2</button>
+                <button data-number>3</button>
+                <button data-operation>*</button>
+                <button data-number>4</button>
+                <button data-number>5</button>
+                <button data-number>6</button>
+                <button data-operation>+</button>
+                <button data-number>7</button>
+                <button data-number>8</button>
+                <button data-number>9</button>
+                <button data-operation>-</button>
+                <button data-number>.</button>
+                <button data-number>0</button>
+                <button data-equals class="span-two">=</button>
+            </section>
+
             <section id="old-link">
                 <h2>Gammel portfolio</h2>
                 <p>Denne link er til en portfolio jeg lavede i slutningen af grundforløbet af min uddannelse, 
@@ -111,4 +135,5 @@
         <script src="assets/js/gallery.js"></script>
         <script src="assets/js/show-hide.js"></script>
         <script src="assets/js/examples-drop-down.js"></script>
+        <script src="assets/js/calculator.js"></script>
 <%- include("../partials/last") %>
