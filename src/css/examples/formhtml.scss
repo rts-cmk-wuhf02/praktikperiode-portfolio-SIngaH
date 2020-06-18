@@ -29,6 +29,7 @@
             width:20%;
             padding:1%;
             font-size:15px;
+            grid-column:2;
             &:hover{
                 background-color: var(--blue);
                 border:solid 2px var(--green);
