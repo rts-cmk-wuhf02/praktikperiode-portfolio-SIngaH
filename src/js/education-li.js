@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         "Github har jeg brugt constant fra august 2019 til oktiber 2020. Jeg syns det er et genielt værktøj, men har en gang i mellem problemmer med. Men det er altid godt at vide at hvis noget går galt har man alt sin kode et sted.",
         "I skolen havde vi en wordpress uge og det var nok til at jeg kan sikkert lave en side og en tema uden problemer. Jeg har lavet en tema for mig selv men har ikke udgivet den.",
         "React har jeg arbejdet med i nogle projekter, jeg har stadigvæk lidt problemer med det, men jeg kunne godt få det til at virke med lidt hjælp.",
-        "Jeg fik lært lidt SEO men i skolen brugte vi kun et par dage på at lære det, så det mangler at blive genfrisket.",
+        "I skolen brugte vi kun to dage på at lære SEO, så det mangler at blive genfrisket.",
         "Lazy loading lært jeg sammen med animationer. Jeg kan godt gøre det men vil mangle at kigge på en gammel kode for at huske alting. Alle billeder på eksempler siden er lavet med lazy loading.",
         "Tailwind var meget nem at lære og bruge. Så selvom jeg har ikke brugt det meget så kunne jeg godt gøre det.",
         "Bootstrap var også nem at bruge men jeg har ikke brugt det meget. Jeg kunne stadigvæk godt bruge det.",

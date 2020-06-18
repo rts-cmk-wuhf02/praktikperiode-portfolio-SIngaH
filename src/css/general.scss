@@ -55,12 +55,12 @@ nav, footer{
     h3, #API .section-div .cheese-name{
         font-size: 17px;
     }
-    p, h2 a li, h2 a, .the-companions_details summary, .the-companions_details p{
+    p, p a, h2 a li, h2 a, .the-companions_details summary, .the-companions_details p{
         font-size: 14px;
     }
-    p a{
-        font-size: 8px;
-    }
+    // p a{
+    //     font-size: 14px;
+    // }
 }
 @media only screen and (max-width:800px){
     #scroll-to-form{
@@ -72,7 +72,7 @@ nav, footer{
     h3, #API .section-div .cheese-name{
         font-size: 15px;
     }
-    p, li, .the-companions_details summary, .the-companions_details p{
+    p, p a, li, .the-companions_details summary, .the-companions_details p{
         font-size: 12px;
     }
 }
@@ -86,7 +86,7 @@ nav, footer{
     h3, #API .section-div .cheese-name{
         font-size: 13px;
     }
-    p, li, .the-companions_details summary, .the-companions_details p{
+    p, p a, li, .the-companions_details summary, .the-companions_details p{
         font-size: 10px;
     }
 }
@@ -94,7 +94,7 @@ nav, footer{
     header h1 a{
         font-size: 40px;
     }
-    p, li, .the-companions_details summary, .the-companions_details p{
+    p, p a, li, .the-companions_details summary, .the-companions_details p{
         font-size:7px;
     }
 }
@@ -107,7 +107,7 @@ nav, footer{
     #scroll-to-form{
         font-size:19px;
     }
-    p, li, .the-companions_details summary, .the-companions_details p{
+    p, p a, li, .the-companions_details summary, .the-companions_details p{
         font-size: 7px;
     }
     h2, #gallery #gallery_h1_change {
