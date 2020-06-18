@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         "I skolen havde vi en wordpress uge og det var nok til at jeg kan sikkert lave en side og en tema uden problemer. Jeg har lavet en tema for mig selv men har ikke udgivet den.",
         "React har jeg arbejdet med i nogle projekter, jeg har stadigvæk lidt problemer med det, men jeg kunne godt få det til at virke med lidt hjælp.",
         "Jeg fik lært lidt SEO men i skolen brugte vi kun et par dage på at lære det, så det mangler at blive genfrisket.",
-        "Lazy loading lært jeg sammen med animationer. Jeg kan godt gøre det men vil mangle at kigge på en gammel kode for at huske alting.",
+        "Lazy loading lært jeg sammen med animationer. Jeg kan godt gøre det men vil mangle at kigge på en gammel kode for at huske alting. Alle billeder på eksempler siden er lavet med lazy loading.",
         "Tailwind var meget nem at lære og bruge. Så selvom jeg har ikke brugt det meget så kunne jeg godt gøre det.",
         "Bootstrap var også nem at bruge men jeg har ikke brugt det meget. Jeg kunne stadigvæk godt bruge det.",
         "I skolen var der 2 uger hvor vi skulle programmere en philips hue lysepære. Jeg lavede et programm hvor lyset tændte sig selv da skolen startede, farven på lyset skiftede i pauserne. Lyset var også slukket da skoledagen var færdig(ikke samme tid hver dag) og lyset slukkede også i weekenderne.",
