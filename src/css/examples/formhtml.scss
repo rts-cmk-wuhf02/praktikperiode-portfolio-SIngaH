@@ -1,4 +1,4 @@
-#form{
+#form-html{ 
     h2{
         text-decoration: underline;
         margin:0 0 5% 0;
@@ -39,7 +39,7 @@
     }
 }
 @media only screen and (max-width:872px){
-    #form{
+    #form-html{
         form{
             grid-template-columns: 23% 77%;
             .form-input, textarea{
@@ -52,7 +52,7 @@
     }
 }
 @media only screen and (max-width:800px){
-    .formgroup, #form .formgroup #form-input{
+    .formgroup, #form-html .formgroup #form-input{
         font-size: 12px;
     }
     .form__submit{
@@ -60,7 +60,7 @@
     }
 }
 @media only screen and (max-width:585px){
-    #form{
+    #form-html{
         form{
             grid-template-columns: 30% 70%;
             .form__submit {
@@ -71,7 +71,7 @@
 }
 
 @media only screen and (max-width:542px){
-    .formgroup, #form .formgroup #form-input{
+    .formgroup, #form-html .formgroup #form-input{
         font-size: 10px;
     }
 }
@@ -79,19 +79,19 @@
     header a{
         font-size: 40px;
     }
-    .formgroup, #form .formgroup #form-input {
+    .formgroup, #form-html .formgroup #form-input {
         font-size:6px;
     }
-    #form #the-form{
+    #form-html #the-form{
         grid-template-columns: 29% 72%;
     }
 }
 @media only screen and (max-width:320px){
-    #form form #scoll-to-api{
+    #form-html form #scoll-to-api{
         width: 24%;
         font-size: 10px;
     }
-    .formgroup, #form .formgroup #form-input{
+    .formgroup, #form-html .formgroup #form-input{
         font-size: 7px;
     }
     .form__submit{

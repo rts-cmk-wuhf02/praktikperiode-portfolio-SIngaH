@@ -13,7 +13,8 @@
                 <h2>Denne side bruger jeg til at vise nogle af de ting jeg har lært igennem uddannelsen</h2>
                 <p>Alle billeder på denne side er lavet med lazy-loading</p>
                 <ul>
-                    <li><a href="#form-scroll">Form validering</a></li>
+                    <li><a href="#form-scroll">Form validering lavet med Javascript</a></li>
+                    <li><a href="#form-scroll">Form validering lavet i HTML</a></li>
                     <li><a href="#react-scroll">React</a></li>
                     <li><a href="#API">API hentning</a></li>
                     <li><a href="#animation-nav-link">Animationer</a></li>
@@ -25,8 +26,33 @@
                 <p id="form-scroll">Jeg har også lavet siden med GULP. Jeg bruger GULP for at ændre EJS til HTML (gulp-ejs), SCSS til CSS (gulp-sass), Javascript ES6 til Javascript ES5 (gulp-babel) og til at minimere billeder for web (gulp-imagemin).</p>
             </section>
 
-            <section id="form">
-                <h2>Formen er kun for at vise at jeg kan lave form validering</h2>
+            <section id="formJS">
+                <h2>Denne form validering er lavet i Javascript</h2>
+                <form action="javascript:alert('Du har udfyldt formen rigtigt')" method="post" class="form validate" onsubmit="return checkValidity()">
+                    <div class="formgroup">
+                        <label class="form_label form_label_name">Name :</label>
+                        <input name="name" class="form_input form__name" placeholder="First name" required pattern=".{3,}">
+                        <span class="error error1"></span>
+                    </div>
+                
+                    <div class="formgroup">
+                        <label class="form_label form_label_last_name">Last name :</label>
+                        <input type="name" name="last name" class="form_input form__last_name" placeholder="Last name" required pattern=".{3,}">
+                        <span class="error error2"></span>
+                    </div>
+                
+                    <div class="formgroup">
+                        <label class="form_label form_label_email">Email :</label>
+                        <input type="email" name="emailaddress" class="form_input form__email" placeholder="Email" required pattern=".+\.[a-z]{2,}$">
+                        <span class="error error3"></span>
+                    </div>
+                    
+                    <input type="submit" value="Submit" id="form__submit">
+                </form>
+            </section>
+
+            <section id="form-html">
+                <h2>Denne form har validering inden i HTML</h2>
                 <form action="javascript:alert('Du har udfyldt formen rigtigt')" method="post" class="form validate" id="the-form"> 
                     <div class="formgroup">
                         <label class="form_label form_label_name">Dit navn :</label>
@@ -150,6 +176,7 @@
         </main>
         <%- include("../partials/footer") %>
         <script src="assets/js/lazy-load.js"></script>
+        <script src="assets/js/form.js"></script>
         <script src="assets/js/api-gallery.js"></script>
         <script src="assets/js/gallery.js"></script>
         <script src="assets/js/show-hide.js"></script>
