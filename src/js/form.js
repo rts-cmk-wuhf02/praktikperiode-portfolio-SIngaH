@@ -125,6 +125,15 @@ var dot = email1.value.lastIndexOf(".");
 		mobil.style.border="none";
 	}
 
+	if(besked.value ===""){
+		ath.textContent = "Angiv en besked!"; 
+		besked.focus();
+		besked.style.border="solid 2px red";
+		return false; 
+	}else{
+		besked.style.border="none";
+	}
+
 	ath.textContent = "";
 	return true;
 }
