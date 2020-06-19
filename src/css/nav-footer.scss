@@ -18,6 +18,12 @@ nav ul, footer ul{
             }   
         }
     }
+    #icons{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100%;
+    }
     .drop-down{
         display:flex;
         justify-content:space-around;
@@ -86,8 +92,11 @@ nav ul, footer ul{
     }
 }
 @media only screen and (max-width: 659px){
-    #drop-down{
-        display:none;
+    nav ul{
+        flex-direction:column;
+        #drop-down{
+            display:none;
+        }
     }
     nav ul li #drop-down-icon{
         display:block;
