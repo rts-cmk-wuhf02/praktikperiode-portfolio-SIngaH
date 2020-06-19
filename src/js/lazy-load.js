@@ -20,5 +20,4 @@ document.addEventListener("DOMContentLoaded", ()=>{
     imgs.forEach(img => {
         ImageObserver.observe(img);
     });
-
 });

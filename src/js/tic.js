@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
             document.querySelector(".box"+boxNr+" .panda").style.display="block";
         }
         victory();
-    
     }
     /*-------------------------------------------------------victory-------------------------------------------------------*/
     
@@ -88,9 +87,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
     }
     /*-------------------------------------------------------------------End game-------------------------------------------------------------------*/
     function endGame(){
+
         for(let i=1; i<=boxArray.length; i++){
             document.querySelector(".box"+i).removeEventListener("click", box);
         }
+
         document.querySelector(".player1 h2").style.textDecoration = "none";
         document.querySelector(".player2 h2").style.textDecoration = "none";
         document.querySelector("button").style.display = "block";
@@ -101,5 +102,4 @@ document.addEventListener("DOMContentLoaded", ()=>{
             document.querySelector(".h1").innerHTML = "Victory for Player 1!";
         }
     }
-    
 });
