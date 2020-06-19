@@ -19,10 +19,7 @@ nav ul, footer ul{
         }
     }
     #icons{
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-        width: 100%;
+        display:contents;
     }
     .drop-down{
         display:flex;
@@ -97,6 +94,12 @@ nav ul, footer ul{
         #drop-down{
             display:none;
         }
+    }
+    nav ul #icons{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100%;
     }
     nav ul li #drop-down-icon{
         display:block;
