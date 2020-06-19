@@ -36,6 +36,7 @@
 .the_companions_details_p, .the-companions_summary{
     font-size:14px;
 }
+
 @media only screen and (max-width:358px){
     .section__the_companions-images, .the_companions-img{
         display:none;
@@ -44,6 +45,7 @@
         grid-template-columns: 100%;
     }
 }
+
 @media only screen and (max-width:320px){
     #old-link a{
         font-size: 11px;

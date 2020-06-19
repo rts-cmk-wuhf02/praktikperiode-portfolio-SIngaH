@@ -45,6 +45,7 @@ header{
 nav, footer{
     background-color:var(--green);
 }
+
 @media only screen and (max-width:872px){
     #scroll-to-form{
         font-size:30px;
@@ -58,10 +59,8 @@ nav, footer{
     p, p a, h2 a li, h2 a, .the-companions_details summary, .the-companions_details p{
         font-size: 14px;
     }
-    // p a{
-    //     font-size: 14px;
-    // }
 }
+
 @media only screen and (max-width:800px){
     #scroll-to-form{
         font-size:28px;
@@ -76,6 +75,7 @@ nav, footer{
         font-size: 12px;
     }
 }
+
 @media only screen and (max-width:542px){
     #scroll-to-form{
         font-size:26px;
@@ -90,6 +90,7 @@ nav, footer{
         font-size: 10px;
     }
 }
+
 @media only screen and (max-width:400px){
     header h1 a{
         font-size: 40px;
@@ -98,11 +99,13 @@ nav, footer{
         font-size:7px;
     }
 }
+
 @media only screen and (max-width:350px){
     header h1 a{
         font-size: 36px;
     }
 }
+
 @media only screen and (max-width:320px){
     #scroll-to-form{
         font-size:19px;

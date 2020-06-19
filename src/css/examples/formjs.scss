@@ -46,6 +46,7 @@
         }
     }
 }
+
 @media only screen and (max-width:800px){
     #formJS #form1{
         label, input, textarea{
@@ -56,6 +57,7 @@
         }
     }
 }
+
 @media only screen and (max-width:585px){
     #formJS #form1{
         grid-template-columns: 33% 67%;
@@ -64,6 +66,7 @@
         }
     }
 }
+
 @media only screen and (max-width:542px){
     #formJS #form1{
         input, textarea, label{
@@ -74,6 +77,7 @@
         }
     }
 }
+
 @media only screen and (max-width:400px){
     #formJS #form1{
         grid-template-columns: 29% 72%;

@@ -38,6 +38,7 @@
         }
     }
 }
+
 @media only screen and (max-width:848px){
     #form-html{
         form{
@@ -48,6 +49,7 @@
         }
     }
 }
+
 @media only screen and (max-width:800px){
     #form-html{
         form .formgroup{
@@ -60,6 +62,7 @@
         }
     }
 }
+
 @media only screen and (max-width:585px){
     #form-html form{
         grid-template-columns: 33% 67%;
@@ -68,6 +71,7 @@
         }
     }
 }
+
 @media only screen and (max-width:542px){
     #form-html form{
         .form__submit{
@@ -80,6 +84,7 @@
         }
     }
 }
+
 @media only screen and (max-width:400px){
     #form-html form{
         grid-template-columns: 29% 72%;
@@ -90,55 +95,3 @@
         }
     }
 }
-// @media only screen and (max-width:872px){
-//     #form-html{
-//         form{
-//             grid-template-columns: 23% 77%;
-//             .form-input, textarea{
-//                 font-size: 14px;
-//             }
-//             .form__submit{
-//                 font-size:14px;    
-//             }
-//         }
-//     }
-// }
-// @media only screen and (max-width:800px){
-//     #form-html form{
-//         .formgroup{
-//             #form-input{
-//                 font-size: 12px;
-//             }
-//         }
-//         .form__submit{
-//             font-size:14px;    
-//         }
-//     }
-// }
-// @media only screen and (max-width:585px){
-//     #form-html{
-//         form{
-//             grid-template-columns: 30% 70%;
-//             .form__submit {
-//                 font-size: 12px;
-//             }
-//         }
-//     }
-// }
-
-// @media only screen and (max-width:542px){
-//     #form-html form .formgroup{
-//         input{
-//             font-size: 10px;
-
-//         }
-//     }
-// }
-// @media only screen and (max-width:400px){
-//     #form-html form {
-//         grid-template-columns: 29% 72%;
-//         .formgroup input{
-//             font-size:6px;
-//         }
-//     }
-// }

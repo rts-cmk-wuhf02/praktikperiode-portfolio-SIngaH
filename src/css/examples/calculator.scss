@@ -52,6 +52,7 @@
         padding:5% 5%;
     }
 }
+
 @media only screen and (max-width: 689px){
     #wrapper #calculator{
         grid-template-rows: minmax(120px, auto) repeat(5, 76px);
