@@ -92,7 +92,7 @@ nav ul, footer ul{
     }
 }
 @media only screen and (max-width: 659px){
-    nav ul{
+    #nav-ul{
         flex-direction:column;
         #drop-down{
             display:none;
