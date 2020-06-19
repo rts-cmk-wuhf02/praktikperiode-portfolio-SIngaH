@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         "Ejs har vi lært om siden vi startede på gulp. ejs er meget nyttigt sammen med gullp, fordi med gulp kan man ændre ejs filer til html. Det er godt fordi man kan lave componenter med ejs. Så man kan lave en ejs fil og bruge den mange steder uden at skrive koden igen.",
         "Scss lærte vi også sammen med gulp. Med scss kan man neste ting inden i hinanden som gør ting nemmere. Scss kan man også ændre til css med gulp.", 
         "Jeg har arbejdet med javascript siden cs februar 2019. Jeg har lavet en masse ting med Javascipt, alt fra et billede galleri til at styre et Philips hue lys.",
-        "Gulp er en meget nyttig task manager. Jeg har mest brugt det til at ændre ejs til html, scss til css, javascript til es6 og til at minimere billeder til web. Det kan man gøre med utoligt lidt kode og gulp går i gang da du gemmer filen eller tilføjer et billede.",
+        "Gulp er en meget nyttig task manager. Jeg har mest brugt det til at ændre ejs til html, scss til css, javascript es6 til es5 og til at minimere billeder til web. Det kan man gøre med utoligt lidt kode og gulp går i gang da du gemmer filen eller tilføjer et billede.",
         "Jeg har arbejdet med APIer siden cs januar 2020. Jeg har lavet midt eget API som jeg bruger på eksempler siden. Jeg har også arbejdet med APIer fra The new york times, spotify, pokemon, star wars o.s.v.",
         "Json har jeg ikke arbejdet med men jeg kender det godt og syns de er nemt at gøre.",
         "font awesome kommer med i de fleste projekter, de er nemme at styre.",
