@@ -7,7 +7,7 @@ let email2 = document.querySelector(".input-email2");
 let mobil = document.querySelector(".input-mobil");
 let besked = document.querySelector("textarea");
 
-function validation(m){ 
+function validation(){ 
 	if(navn.value ===""){
 		ath.textContent = "Angiv et navn!"; 
 		navn.focus();
@@ -90,5 +90,6 @@ var dot = email1.value.lastIndexOf(".");
 		mobil.focus();
 		return false;
 	}
+	ath.textContent = "";
 	return true;
 }

@@ -28,60 +28,56 @@
 
             <section id="formJS">
                 <h2>Denne form validering er lavet i Javascript</h2>
-                <form action="javascript:alert('Du har udfyldt formen rigtigt')" method="post" class="form validate" onsubmit="return checkValidity()">
-                    <div class="formgroup">
-                        <label class="form_label form_label_name">Name :</label>
-                        <input name="name" class="form_input form__name" placeholder="First name" required pattern=".{3,}">
-                        <span class="error error1"></span>
-                    </div>
-                
-                    <div class="formgroup">
-                        <label class="form_label form_label_last_name">Last name :</label>
-                        <input type="name" name="last name" class="form_input form__last_name" placeholder="Last name" required pattern=".{3,}">
-                        <span class="error error2"></span>
-                    </div>
-                
-                    <div class="formgroup">
-                        <label class="form_label form_label_email">Email :</label>
-                        <input type="email" name="emailaddress" class="form_input form__email" placeholder="Email" required pattern=".+\.[a-z]{2,}$">
-                        <span class="error error3"></span>
-                    </div>
+                <form id="form1" action="javascript:alert('Du har udfyldt formen rigtigt')" onsubmit="return validation()" method="post">
+                    <label class="navn">Navn:</label>
+                    <input type="text" name="navn" placeholder="Navn" class="input-navn">
+
+                    <label class="alder">Alder:</label>
+                    <input type="text" name="alder" placeholder="Du skal være over 18" class="input-alder">
                     
-                    <input type="submit" value="Submit" id="form__submit">
+                    <label class="email">Email:</label>
+                    <input type="text" name="email1" placeholder="fake@email.com" class="input-email">
+                    
+                    <label class="email2">Gentag Email:</label>
+                    <input type="text" name="email2" placeholder="fake@email.com" class="input-email2">
+                    
+                    <label class="mobil">Mobilnummer:</label>
+                    <input type="text" name="mobil" placeholder="52146815" class="input-mobil">
+                    
+                    <label class="besked">Besked:</label>
+                    <textarea name="comment" rows="5" placeholder="Skriv din besked her..."></textarea>
+                    
+                    <input type="submit" value="Send" class="button">	 
+					<div id="ath"></div>
                 </form>
             </section>
-
+                
             <section id="form-html">
                 <h2>Denne form har validering inden i HTML</h2>
                 <form action="javascript:alert('Du har udfyldt formen rigtigt')" method="post" class="form validate" id="the-form"> 
                     <div class="formgroup">
                         <label class="form_label form_label_name">Dit navn :</label>
                         <input name="name" class="form__name form-input" id="form-input" placeholder="Dit navn" required pattern=".{3,}">
-                        <span class="error error1"></span>
                     </div>
                     
                     <div class="formgroup">
                         <label class="form_label form_label_last_name">Virksomhed :</label>
                         <input type="name" name="last name" class="form__virksomhed form-input" id="form-input" placeholder="Virksomhedens navn" required pattern=".{3,}">
-                        <span class="error error2"></span>
                     </div>
                     
                     <div class="formgroup">
                         <label class="form_label form_label_email">Email :</label>
                         <input type="email" name="emailaddress" class="form__email form-input" id="form-input" placeholder="Email" required pattern=".+\.[a-z]{2,}$">
-                        <span class="error error3"></span>
                     </div>
                     
                     <div class="formgroup">
                         <label class="form_label mobil">Telefon :</label>
                         <input type="tel" name="Telefon" placeholder="52146815" class="form__phone form-input" id="form-input" required pattern="[0-9]{8}"> 
-                        <span class="error error4"></span>
                     </div>
                     
                     <div class="formgroup">
                         <label class="form_label form_label_message">Besked :</label>
                         <textarea class="form__textarea" name="comment form-input" id="form-input" rows="5" placeholder="Skriv din besked her..." required></textarea>
-                        <span class="error error5"></span>
                     </div>
                     
                     <input type="submit" value="Indsend" class="form__submit" id="react-scroll">
