@@ -1,43 +1,94 @@
-document.addEventListener("DOMContentLoaded", ()=>{
+var ath = document.querySelector("#ath"); 
 
-    let checkValidity = (field) =>{
-        if(field.disabled || field.type === 'file' || field.type === 'reset' || field.type === 'submit' || field.type === 'button'){
-            return;
-        }
-        if(field.validity.valid === true){
-            return;
-        }
-        if(field.validity.valueMissing){
-            return 'Please fill out the form';
-        }
-        if(field.type === 'email'){
-            return 'The email is not valid';
-        }
-        if(field.validity.patternMismatch){
-            return 'That is not a name';
-        }
-        
-    }
-    
-    let showError = (field, errormsg) => {
-        field.parentElement.querySelector('.error').innerHTML = errormsg;
-        field.parentElement.querySelector('.error').classList.add('active');
-    }
-    let removeError = (field) => {
-        field.parentElement.querySelector('.error').innerHTML = "";
-        field.parentElement.querySelector('.error').classList.remove('active');
-    }
-    document.addEventListener('blur', (event) => {
-        if(!event.target.form.classList.contains('validate')){
-            return;
-        }
-        let isValid = checkValidity(event.target);
-        
-        if(isValid){
-            showError(event.target, isValid);
-        }else{
-            removeError(event.target);
-        }
-    }, true); 
-    
-});
+let navn = document.querySelector(".input-navn");
+let alder = document.querySelector(".input-alder");
+let email1 = document.querySelector(".input-email");
+let email2 = document.querySelector(".input-email2");
+let mobil = document.querySelector(".input-mobil");
+let besked = document.querySelector("textarea");
+
+function validation(m){ 
+	if(navn.value ===""){
+		ath.textContent = "Angiv et navn!"; 
+		navn.focus();
+		return false; 
+	}
+
+	if(alder.value ===""){
+		ath.textContent = "Angiv en alder!"; 
+		alder.focus();
+		return false; 
+	}
+
+	if(isNaN(alder.value)){
+		ath.textContent = "Angiv alder med tal!";
+		alder.focus();		
+		return false; 
+	}
+
+	if(alder.value < 18){ 
+		ath.textContent = "Du skal være mindst 18 år!"; 
+		alder.focus();		
+		return false; 
+	}
+
+
+//-------------------------------------------------------EMAIL------------------------------
+var at = email1.value.indexOf("@"); 
+var dot = email1.value.lastIndexOf("."); 
+
+	if(email1.value ===""){
+		ath.textContent = "Angiv en email-adresse!"; 
+		email1.focus();
+		return false; 
+	}
+	if(at<= 0){ 
+		ath.textContent ="Skal indeholde et @ som ikke må være det første tegn!";
+		email1.focus();		
+		return false;
+	}
+
+	if(dot < at +2){
+		ath.textContent ="Tilføj minst et tegn mellem @ og det sidste punktum!";
+		email1.focus();		
+		return false;		
+	}
+
+	if(email1.value.length <= dot+2){
+		ath.textContent = "Der skal være mindst 2 tegn efter det sidste punktum!";
+		console.log(dot);
+		console.log(at);
+		return false;
+		}
+
+	if(email1.value ==="" || email2.value !== email1.value){ 
+		ath.textContent = "Email-adresserne skal være ens!";
+		email2.focus();
+		return false; 
+	}
+
+//---------------------------------------------------mobil----------------------------------
+	if(mobil.value ===""){
+		ath.textContent = "Angiv et mobil nummer!";
+		mobil.focus();
+		return false;
+	}
+
+	if(isNaN(mobil.value)){
+		ath.textContent = "Angiv et gyldigt mobil nummer!";
+		mobil.focus();
+		return false;
+	}
+
+	if(mobil.value.length > 8){
+		ath.textContent = "Dit mobilnummer har for mange tal!";
+		mobil.focus();
+		return false;
+	}
+	if(mobil.value.length < 8){
+		ath.textContent = "Dit mobilnummer mangler nogle tal!";
+		mobil.focus();
+		return false;
+	}
+	return true;
+}
